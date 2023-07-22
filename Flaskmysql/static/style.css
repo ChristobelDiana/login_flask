@@ -1,0 +1,126 @@
+* {
+  	box-sizing: border-box;
+ }
+body {
+  	background-color: #846974;
+  	margin: 0;
+}
+.login {
+  	width: 400px;
+  	background-color: #ffffff;
+  	box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+  	margin: 100px auto;
+}
+.login h1{
+  	text-align: center;
+  	color: #800d28;
+  	font-size: 24px;
+  	padding: 20px 0 20px 0;
+  	border-bottom: 1px solid #dee0e4;
+}
+
+.login form {
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: center;
+  	padding-top: 20px;
+}
+.login form label {
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width: 50px;
+  	height: 50px;
+  	background-color: #800d28;
+  	color: #ffffff;
+}
+.login form input[type="password"], .login form input[type="text"], .login form input[type="email"], .register form input[type="password"], .register form input[type="text"], .register form input[type="email"] {
+  	width: 310px;
+  	height: 50px;
+  	border: 1px solid #dee0e4;
+  	margin-bottom: 20px;
+  	padding: 0 15px;
+}
+.login form input[type="submit"] {
+  	width: 100%;
+  	padding: 15px;
+  	margin-top: 20px;
+  	background-color: #800d28;
+  	border: 0;
+  	cursor: pointer;
+  	font-weight: bold;
+  	color: #ffffff;
+  	transition: background-color 0.2s;
+}
+.login form input[type="submit"]:hover {
+  	background-color: #c78728;
+  	transition: background-color 0.2s;
+}
+body.loggedin {
+  	background-color: #dcfbfc;
+}
+
+.header img {
+  float: left;
+  width: 80px;
+  height: 83px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+}
+
+h1{
+        color:green;
+        text-align: center;
+  }
+
+.nav
+ {
+  overflow: hidden;
+  background-color: #880E4F;
+
+ }
+ .nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 6px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  }
+  .nav a:hover
+   {
+  background-color: #ddd;
+  color: black;
+  }
+
+ button {
+            background-color: brown;
+            width: 250px;
+            color: white;
+            font-size: 20px;
+            padding: 15px;
+            text-align: center;
+            margin: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+    }
+    table{
+    margin-left:auto;
+    margin-right:auto;
+    font-size:18px;
+       }
+    td, th
+    {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+    }
+   tr:nth-child(even)
+   {
+  background-color: #c0c0c0;
+  }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trinity software</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+<body>
+<div class="login">
+	<div class="header">
+  	<img src="static/trinity.jpg" alt="logo">
+  	<h1>Trinity Software Login</h1>
+	</div>
+				<form action="{{ url_for('login') }}" method="post">
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<div class="msg">{{ msg }}</div>
+				<input type="submit" value="Login">
+			</form>
+		</div>
+</body>
+</html>

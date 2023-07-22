@@ -1,0 +1,33 @@
+<head>
+    <meta charset="utf-8">
+		<title>Trinity reg</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body class="loggedin">
+
+<h1> Trinity registration details for {{name }}</h1>
+<div class="nav">
+ <a href="{{ url_for('home') }}"><h2>Home</h2></a>
+ <a href="{{ url_for('logout') }}"><h2>Logout</h2></a>
+</div>
+<table>
+    <thead>
+    <tr>
+        <th>Student Name</th>
+        <th>City</th>
+        <th>contact no</th>
+        <th>Email address</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for row in data%}
+    <tr>
+       <td>{{row[1]}}</td>
+        <td>{{row[3]}}</td>
+        <td>{{row[5]}}</td>
+        <td>{{row[4]}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
